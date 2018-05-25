@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 
+import classes from "./App.css";
+
 class App extends Component {
   render() {
     const about = () => <h1>about</h1>;
@@ -9,7 +11,7 @@ class App extends Component {
     const contact = () => <h1>contact</h1>;
     return (
       <BrowserRouter>
-        <div className="App">
+        <div className={classes.App}>
           <Navbar />
           <Route path="/about" component={about} />
           <Route path="/portfolio" component={portfolio} />
@@ -21,3 +23,4 @@ class App extends Component {
 }
 
 export default App;
+// Photo by Jeremy Thomas on Unsplash
