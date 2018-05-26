@@ -1,0 +1,31 @@
+.Project {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 70%;
+}
+
+.Left {
+  border: 1px solid white;
+}
+
+.Right {
+  border: 1px solid white;
+}
+
+.mainImage {
+  border: 1px solid white;
+  width: 300px;
+  height: 300px;
+}
+
+.Buttons a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 15px;
+}
