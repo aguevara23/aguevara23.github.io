@@ -6,7 +6,6 @@ import classes from "./Portfolio.css";
 import projects from "../../data";
 
 const portfolio = () => {
-  console.log(projects);
   const portfolioProjects = projects.map(project => (
     <PortfolioItem
       key={project.title}

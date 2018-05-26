@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import classes from "./App.css";
 import Home from "./components/Home/Home";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Project from "./components/Project/Project";
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path="/about" component={about} />
           <Route path="/contact" component={contact} />
           <Switch>
+            <Route path="/portfolio/:projectName" component={Project} />
             <Route path="/portfolio" component={Portfolio} />
           </Switch>
         </div>
