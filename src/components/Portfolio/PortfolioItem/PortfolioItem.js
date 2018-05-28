@@ -10,7 +10,6 @@ class PortfolioItem extends Component {
       <Link to={this.props.path} className={classes.PortfolioItem}>
         <div>
           <h1>{this.props.title}</h1>
-          <h3>{this.props.desc}</h3>
         </div>
       </Link>
     );
