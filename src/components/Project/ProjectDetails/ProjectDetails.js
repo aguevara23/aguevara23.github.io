@@ -3,8 +3,12 @@ import classes from "./ProjectDetails.css";
 import Wischen from "../../../assets/wischen.png";
 import RealEstate from "../../../assets/realestate.png";
 import InteriorDesign from "../../../assets/interiordesign.png";
+import { withRouter } from "react-router";
+// import images from "../../../assets";
 
 const projectDetails = props => {
+  // console.log("images", images);
+  console.log(props);
   const loadImage = title => {
     switch (props.data.title) {
       case "Wischen":
@@ -25,8 +29,16 @@ const projectDetails = props => {
   return (
     <div className={classes.Project}>
       <div className={classes.Left}>
+        <button
+          className={classes.GoBack}
+          onClick={() => props.history.goBack()}
+        >
+          back to projects
+        </button>
         <h1>{props.data.title}</h1>
+        <h3>Description</h3>
         <h3>{props.data.description}</h3>
+        <h3>Technology used:</h3>
         <div className={classes.Buttons}>
           <a target="_blank" href={props.data.demo}>
             View Demo
@@ -45,4 +57,4 @@ const projectDetails = props => {
   );
 };
 
-export default projectDetails;
+export default withRouter(projectDetails);

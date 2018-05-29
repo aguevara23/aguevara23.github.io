@@ -2,6 +2,7 @@ import React from "react";
 import projects from "../../data";
 import { Redirect } from "react-router-dom";
 import ProjectDetails from "./ProjectDetails/ProjectDetails";
+import classes from "./Project.css";
 
 const project = props => {
   const loadProject = pathname => {
@@ -14,8 +15,7 @@ const project = props => {
   };
 
   return (
-    <div>
-      <button onClick={() => props.history.goBack()}>back to projects</button>
+    <div className={classes.Container}>
       {loadProject(props.location.pathname)}
     </div>
   );
