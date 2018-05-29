@@ -6,6 +6,8 @@ import RealEstate from "../../../assets/realestate.png";
 import InteriorDesign from "../../../assets/interiordesign.png";
 import Splatter from "../../../assets/splatter.png";
 import MilennialGoT from "../../../assets/MilennialGoT.png";
+import Dribbble01 from "../../../assets/dribbble01.png";
+
 import classes from "./PortfolioItem.css";
 
 class PortfolioItem extends Component {
@@ -26,6 +28,8 @@ class PortfolioItem extends Component {
           return (
             <img className={classes.Image} src={InteriorDesign} alt="test" />
           );
+        case "Dribbble 01":
+          return <img className={classes.Image} src={Dribbble01} alt="test" />;
         default:
           return null;
       }

@@ -5,6 +5,7 @@ import RealEstate from "../../../assets/realestate.png";
 import InteriorDesign from "../../../assets/interiordesign.png";
 import Splatter from "../../../assets/splatter.png";
 import MilennialGoT from "../../../assets/MilennialGoT.png";
+import Dribbble01 from "../../../assets/dribbble01.png";
 import { withRouter } from "react-router";
 
 const projectDetails = props => {
@@ -22,6 +23,10 @@ const projectDetails = props => {
         );
       case "Splatter":
         return <img className={classes.mainImage} src={Splatter} alt="test" />;
+      case "Dribbble 01":
+        return (
+          <img className={classes.mainImage} src={Dribbble01} alt="test" />
+        );
       case "Milennial Game of Thrones":
         return (
           <img className={classes.mainImage} src={MilennialGoT} alt="test" />

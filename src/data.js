@@ -30,14 +30,14 @@ const projects = [
     images: ["wischen.png"]
   },
   {
-    title: "Dough",
+    title: "Dribbble 01",
     description: "Test description",
     thumbnail: "test link",
-    demo: "dlakfj",
-    gh: "aldfkj",
+    demo: "https://aguevara23.github.io/dribbble-01/",
+    gh: "https://github.com/aguevara23/dribbble-01",
     tech: ["HTML", "CSS", "JS", "Gulp", "PostCSS"],
-    path: "/portfolio/dough",
-    images: ["interiordesign.png"]
+    path: "/portfolio/dribbble-01",
+    images: ["dribbble01.png"]
   },
   {
     title: "Splatter",
