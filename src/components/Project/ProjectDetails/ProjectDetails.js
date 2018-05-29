@@ -36,6 +36,12 @@ const projectDetails = props => {
     }
   };
 
+  const renderTechList = () => {
+    let techList = props.data.tech.map((item, i) => {
+      return <li key={i}>{item}</li>;
+    });
+    return techList;
+  };
   return (
     <div className={classes.Project}>
       <div className={classes.Left}>
@@ -46,9 +52,10 @@ const projectDetails = props => {
           back to projects
         </button>
         <h1>{props.data.title}</h1>
-        <h3>Description</h3>
-        <h3>{props.data.description}</h3>
+        <h3>Summary</h3>
+        <p>{props.data.description}</p>
         <h3>Technology used:</h3>
+        <ul>{renderTechList()}</ul>
         <div className={classes.Buttons}>
           <a target="_blank" href={props.data.demo}>
             View Demo

@@ -34,6 +34,7 @@ class PortfolioItem extends Component {
           return null;
       }
     };
+
     return (
       <Link to={this.props.path} className={classes.PortfolioItem}>
         {loadImage()}
