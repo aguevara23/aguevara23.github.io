@@ -38,6 +38,26 @@ const projects = [
     tech: ["HTML", "CSS", "JS", "Gulp", "PostCSS"],
     path: "/portfolio/dough",
     images: ["interiordesign.png"]
+  },
+  {
+    title: "Splatter",
+    description: "Test description",
+    thumbnail: "test link",
+    demo: "https://aguevara23.github.io/splatter-app/",
+    gh: "https://github.com/aguevara23/splatter-app",
+    tech: ["HTML", "CSS", "JS", "Gulp", "PostCSS"],
+    path: "/portfolio/splatter",
+    images: ["splatter.png"]
+  },
+  {
+    title: "Milennial Game of Thrones",
+    description: "Test description",
+    thumbnail: "test link",
+    demo: "https://aguevara23.github.io/resume-booster/",
+    gh: "https://github.com/aguevara23/resume-booster",
+    tech: ["HTML", "CSS", "JS", "Gulp", "PostCSS"],
+    path: "/portfolio/milennial-got",
+    images: ["MilennialGoT.png"]
   }
 ];
 

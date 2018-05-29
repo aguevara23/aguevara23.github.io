@@ -3,12 +3,11 @@ import classes from "./ProjectDetails.css";
 import Wischen from "../../../assets/wischen.png";
 import RealEstate from "../../../assets/realestate.png";
 import InteriorDesign from "../../../assets/interiordesign.png";
+import Splatter from "../../../assets/splatter.png";
+import MilennialGoT from "../../../assets/MilennialGoT.png";
 import { withRouter } from "react-router";
-// import images from "../../../assets";
 
 const projectDetails = props => {
-  // console.log("images", images);
-  console.log(props);
   const loadImage = title => {
     switch (props.data.title) {
       case "Wischen":
@@ -20,6 +19,12 @@ const projectDetails = props => {
       case "Interior Design":
         return (
           <img className={classes.mainImage} src={InteriorDesign} alt="test" />
+        );
+      case "Splatter":
+        return <img className={classes.mainImage} src={Splatter} alt="test" />;
+      case "Milennial Game of Thrones":
+        return (
+          <img className={classes.mainImage} src={MilennialGoT} alt="test" />
         );
       default:
         return null;

@@ -17,9 +17,9 @@ const portfolio = () => {
     />
   ));
   return (
-    <div className={classes.Portfolio}>
-      {portfolioProjects}
-      <div>test</div>
+    <div>
+      <h1>Projects</h1>
+      <div className={classes.Portfolio}>{portfolioProjects}</div>
     </div>
   );
 };
