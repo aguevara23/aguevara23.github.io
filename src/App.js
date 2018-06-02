@@ -6,10 +6,10 @@ import classes from "./App.css";
 import Home from "./components/Home/Home";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Project from "./components/Project/Project";
+import About from "./components/About/About";
 
 class App extends Component {
   render() {
-    const about = () => <h1>about</h1>;
     const contact = () => <h1>contact</h1>;
 
     return (
@@ -17,7 +17,7 @@ class App extends Component {
         <div className={classes.App}>
           <Navbar />
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={about} />
+          <Route path="/about" component={About} />
           <Route path="/contact" component={contact} />
           <Switch>
             <Route path="/portfolio/:projectName" component={Project} />

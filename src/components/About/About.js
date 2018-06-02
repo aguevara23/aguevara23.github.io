@@ -4,9 +4,25 @@ import classes from "./About.css";
 const about = () => {
   return (
     <div className={classes.Container}>
-      <div>
+      <div className={classes.Right}>
         <h1>About Me</h1>
-        <p>lakjdlkfj alkdjf lkadjfldf</p>
+        <p>
+          My name’s Alex. I’m a self-taught web developer from Nyack, New York.
+          I started learning to code a couple of years ago through Code Academy
+          and Free Code Camp. I then switched to Udemy, taking several courses
+          for front end and full stack web development with JavaScript. I work
+          primarily on the front end with React as my library of choice.
+          However, I have experience with full stack JavaScript, using Node.js,
+          Express.js, and MongoDB for the backend.
+        </p>
+        <p>
+          Aside from coding, I enjoy photography, storytelling, writing,
+          traveling, and learning languages. I also have an avid interest in
+          virtual reality and can’t wait for the second generation of VR
+          headsets. I’m also currently taking classes at The City College of New
+          York.
+        </p>
+        <p>Visual Studio Code + Vim = &lt;3</p>
         <div className={classes.Buttons}>
           <a target="_blank" href={"https://github.com/aguevara23"}>
             Github
