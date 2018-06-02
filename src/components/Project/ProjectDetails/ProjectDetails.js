@@ -42,6 +42,7 @@ const projectDetails = props => {
     });
     return techList;
   };
+
   return (
     <div className={classes.Project}>
       <div className={classes.Left}>

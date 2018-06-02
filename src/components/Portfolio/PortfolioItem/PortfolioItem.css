@@ -16,7 +16,7 @@
   left: 0;
   width: 100%;
   z-index: 1;
-  filter: grayscale(20%);
+  filter: grayscale(0%);
 }
 
 .TextBlock {
@@ -26,19 +26,29 @@
   transform: translate(-50%, -50%);
   z-index: 1000;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: none;
 }
 
 .TextBlock:hover {
-  background: none;
+  background: rgba(0, 0, 0, 0.7);
   transition: 0.3s;
 }
 
 .Image:hover {
-  filter: grayscale(0%);
+  filter: grayscale(50%);
   transition: 0.3s;
+}
+
+.Title {
+  border: 1px solid black;
+  margin: auto;
+}
+
+.Title:hover {
+  display: block;
+  z-index: 2000;
 }

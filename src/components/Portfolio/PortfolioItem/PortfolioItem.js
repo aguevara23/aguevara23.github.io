@@ -39,7 +39,7 @@ class PortfolioItem extends Component {
       <Link to={this.props.path} className={classes.PortfolioItem}>
         {loadImage()}
         <div className={classes.TextBlock}>
-          {/* <h1 classname={classes.Title}>{this.props.title}</h1> */}
+          {/* <h1 className={classes.Title}>{this.props.title}</h1> */}
         </div>
       </Link>
     );
