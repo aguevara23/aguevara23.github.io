@@ -7,7 +7,7 @@ import projects from "../../data";
 
 class Portfolio extends Component {
   state = {
-    searchInput: [],
+    searchInput: "",
     projects: projects
   };
 
@@ -19,6 +19,9 @@ class Portfolio extends Component {
 
   submitHandler = event => {
     event.preventDefault();
+    if (!this.state.searchInput) {
+      return this.resetProjects();
+    }
     this.filterProjects();
   };
 
@@ -30,13 +33,16 @@ class Portfolio extends Component {
   };
 
   tokenizeWord = word => {
-    const token = word.replace(/[^\w\s]/gi, "").toLowerCase();
+    const token = word
+      .replace(/[^\w\s]/gi, "")
+      .toLowerCase()
+      .trim();
     return token;
   };
 
   resetProjects = () => {
     this.setState({
-      searchInput: null,
+      searchInput: "",
       projects: projects
     });
   };
@@ -56,13 +62,20 @@ class Portfolio extends Component {
     return (
       <div>
         <h1>Projects</h1>
-        <form onSubmit={event => this.submitHandler(event)}>
+        <form
+          className={classes.SearchForm}
+          onSubmit={event => this.submitHandler(event)}
+        >
           <input
+            className={classes.SearchInput}
             value={this.state.searchInput}
+            type="text"
             onChange={event => this.changeInputHandler(event)}
             placeholder="Search for Projects"
           />
-          <p onClick={this.resetProjects}>clear</p>
+          <p className={classes.Clear} onClick={this.resetProjects}>
+            X
+          </p>
         </form>
         <div className={classes.Portfolio}>{portfolioProjects}</div>
       </div>

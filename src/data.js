@@ -8,7 +8,7 @@ const projects = [
     path: "/portfolio/real-estate",
     images: ["realestate.png"],
     description: "This is a sample redesign for a real-estate agency.",
-    tags: ["html", "css", "js", "javascript", "gulp", "postCSS"]
+    tags: ["html", "css", "js", "javascript", "gulp", "postcss"]
   },
   {
     title: "Interior Design",
@@ -20,7 +20,7 @@ const projects = [
     images: ["interiordesign.png"],
     description:
       "A redesign of a portfolio website for an interior design company based in Arlington, VA. Built, with React, Redux, and React Router, and styled with PostCSS.",
-    tags: ["react", "redux", "react router", "postCSS"]
+    tags: ["react", "redux", "react router", "css", "postcss"]
   },
   {
     title: "Wischen",
@@ -32,7 +32,7 @@ const projects = [
     images: ["wischen.png"],
     description:
       "A React app that allows the user to find movies from TheMovieDB to add to a personal watchlist.",
-    tags: ["react", "redux", "react router", "css modules"]
+    tags: ["react", "redux", "react router", "css", "css modules"]
   },
   {
     title: "Dribbble 01",
