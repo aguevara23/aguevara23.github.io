@@ -10,18 +10,15 @@ import About from "./components/About/About";
 
 class App extends Component {
   render() {
-    const contact = () => <h1>contact</h1>;
-
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio-2018/">
         <div className={classes.App}>
           <Navbar />
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={contact} />
           <Switch>
+            <Route path="/about" component={About} />
             <Route path="/portfolio/:projectName" component={Project} />
             <Route path="/portfolio" component={Portfolio} />
+            <Route exact path="/" component={Home} />
           </Switch>
         </div>
       </BrowserRouter>
@@ -30,4 +27,3 @@ class App extends Component {
 }
 
 export default App;
-// Photo by Jeremy Thomas on Unsplash
