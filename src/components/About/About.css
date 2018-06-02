@@ -1,0 +1,23 @@
+.Container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.Container * {
+  border: 1px solid black;
+}
+
+.Buttons {
+  margin-top: 100px;
+}
+
+.Buttons a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-right: 10px;
+  width: 200px;
+}
