@@ -5,7 +5,7 @@ const about = () => {
   return (
     <div className={classes.Container}>
       <div className={classes.Right}>
-        <h1>About Me</h1>
+        <h1>About Me!</h1>
         <p>
           My name’s Alex. I’m a self-taught web developer from Nyack, New York.
           I started learning to code a couple of years ago through Code Academy
