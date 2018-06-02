@@ -10,9 +10,8 @@ import About from "./components/About/About";
 
 class App extends Component {
   render() {
-    console.log("url:", process.env.PUBLIC_URL);
     return (
-      <BrowserRouter basename={"/portfolio-2018/"}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className={classes.App}>
           <Navbar />
           <Switch>
