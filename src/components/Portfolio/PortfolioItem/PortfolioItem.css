@@ -30,17 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: none;
-}
-
-.TextBlock:hover {
-  transition: 0.3s;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.Image:hover {
-  filter: grayscale(50%);
-  transition: 0.3s;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .Title {
@@ -50,11 +40,6 @@
   font-size: 18px;
   font-weight: lighter;
   margin: auto;
-}
-
-.Title:hover {
-  display: block;
-  z-index: 2000;
 }
 
 .Buttons {
@@ -77,17 +62,25 @@
   }
 
   .TextBlock {
-    /* display: none; */
+    /* display: block; */
     position: relative;
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
+    background: none;
     /* background: rgba(255, 0, 0, 0.5); */
+  }
+
+  .TextBlock:hover {
+    display: block;
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.7);
   }
 
   .Title {
     flex: none;
     padding-left: 0;
+    z-index: 2000;
   }
 
   .Buttons {
@@ -97,6 +90,7 @@
     display: flex;
     justify-content: space-between;
     padding-right: 0;
+    display: none;
   }
 
   .Buttons a {
@@ -107,5 +101,10 @@
   .Image {
     height: 100%;
     object-fit: cover;
+  }
+
+  .Image:hover {
+    filter: grayscale(50%);
+    transition: 0.3s;
   }
 }
