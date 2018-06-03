@@ -53,10 +53,10 @@ const projectDetails = props => {
           back to projects
         </button>
         <h1>{props.data.title}</h1>
-        <h3>Summary</h3>
+        <h3 className={classes.Header}>Summary</h3>
         <p>{props.data.description}</p>
-        <h3>Technology used:</h3>
-        <ul>{renderTechList()}</ul>
+        <h3 className={classes.Header}>Technology used:</h3>
+        <ul className={classes.TechList}>{renderTechList()}</ul>
         <div className={classes.Buttons}>
           <a target="_blank" href={props.data.demo}>
             View Demo

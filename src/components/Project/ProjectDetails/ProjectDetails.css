@@ -1,17 +1,25 @@
 .Project {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60%;
-  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  display: none;
+}
+.Project h1 {
+  font-size: 1.4rem;
+}
+
+.Project h3 {
+  font-size: 1rem;
+}
+
+.TechList {
+  display: none;
 }
 
 .Left {
   border: 1px solid white;
-  padding-left: 30px;
 }
 
 .Right {
@@ -38,4 +46,21 @@
   padding-left: -30px;
   border: 1px solid black;
   background-color: none;
+}
+
+@media (min-width: 600px) {
+  .Project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70%;
+  }
+
+  .Left {
+    padding-left: 30px;
+  }
 }
