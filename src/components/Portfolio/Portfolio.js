@@ -61,7 +61,7 @@ class Portfolio extends Component {
 
     return (
       <div>
-        <h1>Projects</h1>
+        <h1 className={classes.Header}>Projects</h1>
         <form
           className={classes.SearchForm}
           onSubmit={event => this.submitHandler(event)}

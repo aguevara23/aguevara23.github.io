@@ -1,13 +1,13 @@
 .PortfolioItem {
-  min-height: 300px;
+  height: 100px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: white;
   text-decoration: none;
   position: relative;
   overflow: hidden;
+  margin-bottom: 5px;
+  border: 1px solid black;
 }
 
 .Image {
@@ -34,8 +34,8 @@
 }
 
 .TextBlock:hover {
-  background: rgba(0, 0, 0, 0.7);
   transition: 0.3s;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .Image:hover {
@@ -44,11 +44,29 @@
 }
 
 .Title {
-  border: 1px solid black;
+  /* border: 1px solid red; */
+  flex: 1;
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: lighter;
   margin: auto;
 }
 
 .Title:hover {
   display: block;
   z-index: 2000;
+}
+
+.Buttons {
+  padding-right: 10px;
+}
+
+.Buttons a {
+  z-index: 3000;
+  color: white;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 5px 10px;
+  margin-right: 5px;
 }
