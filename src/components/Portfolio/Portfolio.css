@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 80%;
+  height: 100%;
   margin: 0 auto;
   /* height: 80%; */
 }
@@ -29,8 +30,19 @@
 }
 @media (min-width: 600px) {
   .Portfolio {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     margin: 10% 10%;
+  }
+}
+
+@media (min-width: 900px) {
+  .Portfolio {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
 }

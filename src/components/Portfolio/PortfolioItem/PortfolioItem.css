@@ -70,3 +70,42 @@
   padding: 5px 10px;
   margin-right: 5px;
 }
+
+@media (min-width: 600px) {
+  .PortfolioItem {
+    height: 250px;
+  }
+
+  .TextBlock {
+    /* display: none; */
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    /* background: rgba(255, 0, 0, 0.5); */
+  }
+
+  .Title {
+    flex: none;
+    padding-left: 0;
+  }
+
+  .Buttons {
+    /* border: 1px solid red; */
+    flex: none;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+  }
+
+  .Buttons a {
+    padding: 0;
+    margin: 0;
+  }
+
+  .Image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
