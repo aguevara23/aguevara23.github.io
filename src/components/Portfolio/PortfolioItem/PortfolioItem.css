@@ -62,13 +62,15 @@
   }
 
   .TextBlock {
-    /* display: block; */
-    position: relative;
+    display: block;
+    /* position: relative; */
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    background: none;
-    /* background: rgba(255, 0, 0, 0.5); */
+    width: 100%;
+    /* background: none; */
+    background: rgba(255, 0, 0, 0.5);
   }
 
   .TextBlock:hover {
@@ -78,7 +80,8 @@
   }
 
   .Title {
-    flex: none;
+    /* flex: none; */
+    border: 1px solid black;
     padding-left: 0;
     z-index: 2000;
   }

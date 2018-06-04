@@ -10,8 +10,10 @@ const about = () => {
           My name’s Alex. I’m a self-taught web developer from Nyack, New York.
           I started learning to code a couple of years ago through Code Academy
           and Free Code Camp. I then switched to Udemy, taking several courses
-          for front end and full stack web development with JavaScript. I work
-          primarily on the front end with React as my library of choice.
+          for front end and full stack web development with JavaScript.
+        </p>
+        <p>
+          I work primarily on the front end with React as my library of choice.
           However, I have experience with full stack JavaScript, using Node.js,
           Express.js, and MongoDB for the backend.
         </p>
