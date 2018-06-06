@@ -6,8 +6,9 @@
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border: 1px solid black;
+  display: block;
 }
 
 .Image {
@@ -15,6 +16,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  object-fit: cover;
   z-index: 1;
   filter: grayscale(0%);
 }
@@ -34,8 +36,6 @@
 }
 
 .Title {
-  /* border: 1px solid red; */
-  flex: 1;
   padding-left: 15px;
   font-size: 18px;
   font-weight: lighter;
@@ -62,42 +62,52 @@
   }
 
   .TextBlock {
-    display: block;
-    /* position: relative; */
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    /* background: none; */
-    background: rgba(255, 0, 0, 0.5);
+    background: none;
+    /* background: rgba(255, 0, 0, 0.5); */
   }
 
   .TextBlock:hover {
-    display: block;
+    display: flex;
     transition: 0.3s;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .TextBlock:hover .Title {
+    display: block;
+    height: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
   }
 
   .Title {
-    /* flex: none; */
-    border: 1px solid black;
-    padding-left: 0;
-    z-index: 2000;
-  }
-
-  .Buttons {
-    /* border: 1px solid red; */
-    flex: none;
-    width: 35%;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 0;
     display: none;
   }
 
+  .TextBlock:hover .Buttons {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-around;
+    transition: 0.3s;
+  }
+
+  .Buttons {
+    display: none;
+    width: 35%;
+    margin-top: 30px;
+    padding-right: 0;
+  }
+
   .Buttons a {
-    padding: 0;
+    padding: 10px 15px;
     margin: 0;
   }
 
@@ -109,5 +119,11 @@
   .Image:hover {
     filter: grayscale(50%);
     transition: 0.3s;
+  }
+}
+
+@media (min-width: 900px) {
+  .PortfolioItem {
+    height: 325px;
   }
 }

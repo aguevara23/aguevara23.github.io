@@ -36,17 +36,19 @@ class PortfolioItem extends Component {
     };
 
     return (
-      <Link to={this.props.path} className={classes.PortfolioItem}>
-        {loadImage()}
-        <div className={classes.TextBlock}>
-          <h1 className={classes.Title}>{this.props.title}</h1>
-          <div className={classes.Buttons}>
-            <a target="_blank" href={this.props.demo}>
-              Demo
-            </a>
-            <a target="_blank" href={this.props.gh}>
-              Github
-            </a>
+      <Link to={this.props.path}>
+        <div className={classes.PortfolioItem}>
+          {loadImage()}
+          <div className={classes.TextBlock}>
+            <h1 className={classes.Title}>{this.props.title}</h1>
+            <div className={classes.Buttons}>
+              <a target="_blank" href={this.props.demo}>
+                Demo
+              </a>
+              <a target="_blank" href={this.props.gh}>
+                Github
+              </a>
+            </div>
           </div>
         </div>
       </Link>

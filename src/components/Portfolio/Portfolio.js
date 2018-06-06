@@ -60,7 +60,7 @@ class Portfolio extends Component {
     ));
 
     return (
-      <div>
+      <div className={classes.Container}>
         <h1 className={classes.Header}>Projects</h1>
         <form
           className={classes.SearchForm}
