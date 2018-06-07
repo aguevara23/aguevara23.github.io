@@ -23,7 +23,7 @@ const projectDetails = props => {
         );
       case "Splatter":
         return <img className={classes.mainImage} src={Splatter} alt="test" />;
-      case "Dribbble 01":
+      case "Landing Page":
         return (
           <img className={classes.mainImage} src={Dribbble01} alt="test" />
         );

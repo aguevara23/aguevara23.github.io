@@ -29,7 +29,7 @@ class PortfolioItem extends Component {
           return (
             <img className={classes.Image} src={InteriorDesign} alt="test" />
           );
-        case "Dribbble 01":
+        case "Landing Page":
           return <img className={classes.Image} src={Dribbble01} alt="test" />;
         default:
           return null;

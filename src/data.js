@@ -38,12 +38,12 @@ const projects = [
     tags: ["react", "redux", "react router", "css", "css modules"]
   },
   {
-    title: "Dribbble 01",
+    title: "Landing Page",
     thumbnail: "test link",
     demo: "https://aguevara23.github.io/dribbble-01/",
     gh: "https://github.com/aguevara23/dribbble-01",
     tech: ["HTML", "CSS", "JavaScript"],
-    coreTech: ["html5", "css3", "js"],
+    coreTech: ["html5", "css3"],
     path: "/portfolio/dribbble-01",
     images: ["dribbble01.png"],
     description:
