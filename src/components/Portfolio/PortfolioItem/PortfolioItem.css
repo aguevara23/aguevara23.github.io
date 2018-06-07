@@ -7,7 +7,7 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: block;
 }
 
@@ -42,18 +42,11 @@
   margin: auto;
 }
 
-.Buttons {
-  padding-right: 10px;
-}
-
-.Buttons a {
-  z-index: 3000;
-  color: white;
-  font-size: 0.8rem;
-  text-decoration: none;
-  border: 1px solid white;
-  padding: 5px 10px;
-  margin-right: 5px;
+.Icons {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  margin-right: 10px;
 }
 
 @media (min-width: 600px) {
@@ -92,23 +85,15 @@
     display: none;
   }
 
-  .TextBlock:hover .Buttons {
-    display: flex;
-    font-size: 1rem;
-    justify-content: space-around;
-    transition: 0.3s;
-  }
-
-  .Buttons {
+  .Icons {
     display: none;
-    width: 35%;
+    flex: unset;
     margin-top: 30px;
-    padding-right: 0;
+    margin-right: -10px;
   }
 
-  .Buttons a {
-    padding: 10px 15px;
-    margin: 0;
+  .TextBlock:hover .Icons {
+    display: flex;
   }
 
   .Image {

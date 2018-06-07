@@ -53,6 +53,7 @@ class Portfolio extends Component {
         key={project.title}
         title={project.title}
         desc={project.description}
+        tech={project.coreTech}
         demo={project.demo}
         gh={project.gh}
         path={project.path}

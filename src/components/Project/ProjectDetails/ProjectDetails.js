@@ -27,7 +27,7 @@ const projectDetails = props => {
         return (
           <img className={classes.mainImage} src={Dribbble01} alt="test" />
         );
-      case "Milennial Game of Thrones":
+      case "Resume Booster":
         return (
           <img className={classes.mainImage} src={MilennialGoT} alt="test" />
         );

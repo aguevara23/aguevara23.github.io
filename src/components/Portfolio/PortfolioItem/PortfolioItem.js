@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+import Icon from "../../../UI/Icon/Icon";
 import Wischen from "../../../assets/wischen.png";
 import RealEstate from "../../../assets/realestate.png";
 import InteriorDesign from "../../../assets/interiordesign.png";
@@ -12,7 +13,7 @@ import classes from "./PortfolioItem.css";
 
 class PortfolioItem extends Component {
   render() {
-    const loadImage = title => {
+    const loadImage = () => {
       switch (this.props.title) {
         case "Wischen":
           return <img className={classes.Image} src={Wischen} alt="test" />;
@@ -20,7 +21,7 @@ class PortfolioItem extends Component {
           return <img className={classes.Image} src={RealEstate} alt="test" />;
         case "Splatter":
           return <img className={classes.Image} src={Splatter} alt="test" />;
-        case "Milennial Game of Thrones":
+        case "Resume Booster":
           return (
             <img className={classes.Image} src={MilennialGoT} alt="test" />
           );
@@ -35,20 +36,20 @@ class PortfolioItem extends Component {
       }
     };
 
+    const loadIcons = () => {
+      return this.props.tech.map((item, i) => {
+        return <Icon name={item} key={`${item}${i}`} />;
+      });
+      // map through array of tech, render Icon with the appropriate name
+    };
+
     return (
       <Link to={this.props.path}>
         <div className={classes.PortfolioItem}>
           {loadImage()}
           <div className={classes.TextBlock}>
             <h1 className={classes.Title}>{this.props.title}</h1>
-            <div className={classes.Buttons}>
-              <a target="_blank" href={this.props.demo}>
-                Demo
-              </a>
-              <a target="_blank" href={this.props.gh}>
-                Github
-              </a>
-            </div>
+            <div className={classes.Icons}>{loadIcons()}</div>
           </div>
         </div>
       </Link>
