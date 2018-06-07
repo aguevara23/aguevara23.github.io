@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import Icon from "../../../UI/Icon/Icon";
-import Wischen from "../../../assets/wischen.png";
-import RealEstate from "../../../assets/realestate.png";
-import InteriorDesign from "../../../assets/interiordesign.png";
-import Splatter from "../../../assets/splatter.png";
-import MilennialGoT from "../../../assets/MilennialGoT.png";
-import Dribbble01 from "../../../assets/dribbble01.png";
+import Wischen from "../../../assets/projectImages/wischen.jpg";
+import RealEstate from "../../../assets/projectImages/realestate.jpg";
+import InteriorDesign from "../../../assets/projectImages/interiordesign.jpg";
+import Splatter from "../../../assets/projectImages/splatter.jpg";
+import MilennialGoT from "../../../assets/projectImages/MilennialGoT.jpg";
+import Dribbble01 from "../../../assets/projectImages/dribbble01.jpg";
 
 import classes from "./PortfolioItem.css";
 
