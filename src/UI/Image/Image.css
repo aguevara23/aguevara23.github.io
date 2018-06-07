@@ -1,0 +1,21 @@
+.Image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: grayscale(0%);
+}
+
+@media (min-width: 600px) {
+  .Image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .Image:hover {
+    filter: grayscale(50%);
+    transition: 0.3s;
+  }
+}
