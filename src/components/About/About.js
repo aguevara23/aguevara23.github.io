@@ -4,7 +4,7 @@ import classes from "./About.css";
 const about = () => {
   return (
     <div className={classes.Container}>
-      <div className={classes.Right}>
+      <div className={classes.Left}>
         <h1>About Me!</h1>
         <p>
           My name’s Alex. I’m a self-taught web developer from Nyack, New York.
@@ -40,7 +40,7 @@ const about = () => {
           </a>
         </div>
       </div>
-      <div>
+      <div className={classes.Right}>
         <div>
           <h3>Dev Environment:</h3>
           <ul>
@@ -55,13 +55,14 @@ const about = () => {
             <li>React Native</li>
             <li>C++</li>
             <li>Vim</li>
-            <li>Japanese</li>
           </ul>
         </div>
         <div>
           <h3>Currently Reading:</h3>
           <ul>
-            <li>temp</li>
+            <li>
+              <em>Othello</em> by William Shakespeare
+            </li>
           </ul>
         </div>
         {/* <div>

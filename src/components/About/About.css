@@ -1,17 +1,15 @@
 .Container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-column-gap: 70px;
-  width: 80%;
-  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px;
 }
 
-.Container * {
-  /* border: 1px solid black; */
+.Left {
+  /* border: 1px solid white; */
 }
 
 .Right {
-  margin-right: 100px;
+  margin-top: 20px;
 }
 
 .Buttons {
@@ -22,7 +20,27 @@
   color: white;
   text-decoration: none;
   border: 1px solid white;
-  padding: 10px 15px;
-  margin-right: 10px;
-  width: 200px;
+  padding: 3px 7px;
+  margin-right: 5px;
+}
+
+@media (min-width: 600px) {
+  .Container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 70px;
+    width: 80%;
+    padding: 0;
+    margin: 30px auto;
+  }
+
+  .Left {
+    margin-right: 50px;
+  }
+
+  .Buttons a {
+    padding: 10px 15px;
+    margin-right: 10px;
+    width: 200px;
+  }
 }
