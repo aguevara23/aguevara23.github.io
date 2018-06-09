@@ -19,12 +19,13 @@
   color: white;
   text-decoration: none;
   transition: 0.3s;
+  border-bottom: 1px solid transparent;
 }
 
 .Menu a:hover {
-  color: gold;
+  border-bottom: 1px solid gold;
 }
 
 .Menu a.active {
-  color: gold;
+  border-bottom: 1px solid gold;
 }
