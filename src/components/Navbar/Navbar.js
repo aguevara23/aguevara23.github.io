@@ -1,14 +1,20 @@
 import React from "react";
 import classes from "./Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import resume from "../../assets/AlexGuevara_Resume_2018.pdf";
 
 const Navbar = () => (
   <div className={classes.Navbar}>
     <ul className={classes.Menu}>
-      <Link to="/">Home</Link>
-      <Link to="/portfolio">Portfolio</Link>
-      <Link to="/about/">About</Link>
+      <NavLink activeClassName={classes.active} to="/" exact>
+        Home
+      </NavLink>
+      <NavLink activeClassName={classes.active} to="/portfolio">
+        Portfolio
+      </NavLink>
+      <NavLink activeClassName={classes.active} to="/about/">
+        About
+      </NavLink>
       <a href={resume} target="_blank">
         Resume
       </a>

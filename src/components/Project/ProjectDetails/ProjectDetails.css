@@ -55,13 +55,26 @@
   border: 1px solid white;
   padding: 10px 15px;
   margin-right: 10px;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.Buttons a:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .GoBack {
   padding-left: -30px;
-  border: 1px solid black;
+  border: 1px solid white;
+  color: white;
   background: none;
   margin: 30px 0;
+  transition: 0.3s;
+}
+
+.GoBack:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 600px) {
