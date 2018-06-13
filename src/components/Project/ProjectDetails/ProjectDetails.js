@@ -82,6 +82,12 @@ const projectDetails = props => {
     return techList;
   };
 
+  const demoButton = (
+    <a target="_blank" href={props.data.demo}>
+      View Demo
+    </a>
+  );
+
   return (
     <div className={classes.Project}>
       <div className={classes.Left}>
@@ -97,9 +103,7 @@ const projectDetails = props => {
         <h3 className={classes.Header}>Technology used:</h3>
         <ul className={classes.TechList}>{renderTechList()}</ul>
         <div className={classes.Buttons}>
-          <a target="_blank" href={props.data.demo}>
-            View Demo
-          </a>
+          {props.data.demo ? demoButton : null}
           <a target="_blank" href={props.data.gh}>
             Github
           </a>

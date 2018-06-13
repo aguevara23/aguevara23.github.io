@@ -28,7 +28,7 @@ const projects = [
   {
     title: "Guess the Color",
     thumbnail: "test link",
-    demo: "",
+    demo: null,
     gh: "https://github.com/aguevara23/colorgame-ios",
     tech: ["React Native", "Redux", "React Native Navigation"],
     coreTech: ["react"],
