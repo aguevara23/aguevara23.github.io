@@ -1,35 +1,74 @@
 import React from "react";
 import classes from "./ProjectDetails.css";
+
 import Wischen from "../../../assets/projectImages/wischen.jpg";
 import RealEstate from "../../../assets/projectImages/realestate.jpg";
 import InteriorDesign from "../../../assets/projectImages/interiordesign.jpg";
 import Splatter from "../../../assets/projectImages/splatter.jpg";
 import MilennialGoT from "../../../assets/projectImages/MilennialGoT.jpg";
 import Dribbble01 from "../../../assets/projectImages/dribbble01.jpg";
+import ColorGame from "../../../assets/projectImages/colorgame.jpg";
+
 import { withRouter } from "react-router";
 
 const projectDetails = props => {
   const loadImage = title => {
     switch (props.data.title) {
       case "Wischen":
-        return <img className={classes.mainImage} src={Wischen} alt="test" />;
+        return (
+          <img
+            className={classes.mainImage}
+            src={Wischen}
+            alt="A react app that lets people create a watchlist of movies"
+          />
+        );
       case "Real Estate Website":
         return (
-          <img className={classes.mainImage} src={RealEstate} alt="test" />
+          <img
+            className={classes.mainImage}
+            src={RealEstate}
+            alt="A responsive redesign for a real estate website"
+          />
         );
       case "Interior Design":
         return (
-          <img className={classes.mainImage} src={InteriorDesign} alt="test" />
+          <img
+            className={classes.mainImage}
+            src={InteriorDesign}
+            alt="A portfolio website for an interior designer"
+          />
         );
       case "Splatter":
-        return <img className={classes.mainImage} src={Splatter} alt="test" />;
+        return (
+          <img
+            className={classes.mainImage}
+            src={Splatter}
+            alt="A fun app for creating simple splatter art"
+          />
+        );
       case "Landing Page":
         return (
-          <img className={classes.mainImage} src={Dribbble01} alt="test" />
+          <img
+            className={classes.mainImage}
+            src={Dribbble01}
+            alt="A mobile responsive landing page"
+          />
         );
       case "Resume Booster":
         return (
-          <img className={classes.mainImage} src={MilennialGoT} alt="test" />
+          <img
+            className={classes.mainImage}
+            src={MilennialGoT}
+            alt="A fun app based on random data generators"
+          />
+        );
+      case "Guess the Color":
+        return (
+          <img
+            className={classes.mainImage}
+            src={ColorGame}
+            alt="A react native game based on color"
+          />
         );
       default:
         return null;
