@@ -65,15 +65,6 @@ const about = () => {
             </li>
           </ul>
         </div>
-        {/* <div>
-          <h3>Github Activity:</h3>
-          <ul>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-          </ul>
-        </div> */}
       </div>
     </div>
   );

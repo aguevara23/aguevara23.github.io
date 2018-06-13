@@ -1,17 +1,5 @@
 const projects = [
   {
-    title: "Real Estate Website",
-    thumbnail: "test link",
-    demo: "https://aguevara23.github.io/real-estate/",
-    gh: "https://github.com/aguevara23/real-estate",
-    tech: ["HTML", "CSS", "JavaScript", "Gulp", "PostCSS"],
-    coreTech: ["html5", "css3", "js"],
-    path: "/portfolio/real-estate",
-    images: ["realestate.png"],
-    description: "This is a sample redesign for a real-estate agency.",
-    tags: ["html", "css", "js", "javascript", "gulp", "postcss"]
-  },
-  {
     title: "Interior Design",
     thumbnail: "test link",
     demo: "https://aguevara23.github.io/interior-design/",
@@ -36,6 +24,30 @@ const projects = [
     description:
       "A React app that allows the user to find movies from TheMovieDB to add to a personal watchlist.",
     tags: ["react", "redux", "react router", "css", "css modules"]
+  },
+  {
+    title: "Guess the Color",
+    thumbnail: "test link",
+    demo: "",
+    gh: "https://github.com/aguevara23/colorgame-ios",
+    tech: ["React Native", "Redux", "React Native Navigation"],
+    coreTech: ["react"],
+    path: "/portfolio/colorgame",
+    images: ["colorgame.jpg"],
+    description: "A React Native port of Colt Steele's 'The Great Color Game'",
+    tags: ["react", "redux", "react router", "css", "css modules"]
+  },
+  {
+    title: "Real Estate Website",
+    thumbnail: "test link",
+    demo: "https://aguevara23.github.io/real-estate/",
+    gh: "https://github.com/aguevara23/real-estate",
+    tech: ["HTML", "CSS", "JavaScript", "Gulp", "PostCSS"],
+    coreTech: ["html5", "css3", "js"],
+    path: "/portfolio/real-estate",
+    images: ["realestate.png"],
+    description: "This is a sample redesign for a real-estate agency.",
+    tags: ["html", "css", "js", "javascript", "gulp", "postcss"]
   },
   {
     title: "Landing Page",
