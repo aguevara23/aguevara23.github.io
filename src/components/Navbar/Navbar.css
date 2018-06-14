@@ -1,6 +1,7 @@
 .Navbar {
   background-color: #333;
   display: flex;
+  align-items: center;
   justify-content: center;
   height: 10vh;
 }
@@ -10,22 +11,30 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0;
+  height: 20px;
 }
 
 .Menu a {
   margin: 10px;
-  padding: 0;
+  padding-bottom: 5px;
   color: white;
   text-decoration: none;
   transition: 0.3s;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .Menu a:hover {
-  border-bottom: 1px solid gold;
+  border-bottom: 2px solid gold;
 }
 
 .Menu a.active {
-  border-bottom: 1px solid gold;
+  border-bottom: 2px solid gold;
+}
+
+@media (min-width: 600px) {
+  .Navbar {
+    height: 8vh;
+  }
 }
