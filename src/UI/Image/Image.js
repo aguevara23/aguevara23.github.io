@@ -9,14 +9,15 @@ import MilennialGoT from "../../assets/projectImages/MilennialGoT.jpg";
 import Dribbble01 from "../../assets/projectImages/dribbble01.jpg";
 import ColorGame from "../../assets/projectImages/colorgame.jpg";
 
+// uses different styles depending on type prop
 const image = props => {
   let style = null;
   props.type === "main"
     ? (style = classes.MainImage)
     : (style = classes.BGImage);
 
+  // loads different Images depending on the source prop
   const loadImage = () => {
-    // use tertiary expression to render different class
     switch (props.source) {
       case "Wischen":
         return (

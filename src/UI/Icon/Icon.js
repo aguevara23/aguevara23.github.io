@@ -9,7 +9,8 @@ import nodeIcon from "../../assets/Icons/nodejs.png";
 import mongodbIcon from "../../assets/Icons/mongodb.png";
 import githubIcon from "../../assets/Icons/github.png";
 
-const item = props => {
+// returns an icon that matches the name prop
+const icon = props => {
   const renderImage = () => {
     switch (props.name) {
       case "html5":
@@ -40,4 +41,4 @@ const item = props => {
   return <div>{renderImage()}</div>;
 };
 
-export default item;
+export default icon;

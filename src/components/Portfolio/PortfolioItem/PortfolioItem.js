@@ -6,13 +6,14 @@ import Icon from "../../../UI/Icon/Icon";
 
 import classes from "./PortfolioItem.css";
 
+// PortfolioItem is a thumbnail that links to the appropriate route for each Project component
 class PortfolioItem extends Component {
   render() {
+    // maps through array of tech, render Icon with the appropriate name
     const loadIcons = () => {
       return this.props.tech.map((item, i) => {
         return <Icon name={item} key={`${item}${i}`} />;
       });
-      // map through array of tech, render Icon with the appropriate name
     };
 
     return (

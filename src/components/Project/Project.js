@@ -4,6 +4,7 @@ import { Redirect } from "react-router-dom";
 import ProjectDetails from "./ProjectDetails/ProjectDetails";
 import classes from "./Project.css";
 
+// Project is a container that is accessed by React Router and renders the ProjectDetails component.
 const project = props => {
   const loadProject = pathname => {
     const project = projects.filter(project => project.path === pathname)[0];
