@@ -10,13 +10,18 @@ import Dribbble01 from "../../assets/projectImages/dribbble01.jpg";
 import ColorGame from "../../assets/projectImages/colorgame.jpg";
 
 const image = props => {
+  let style = null;
+  props.type === "main"
+    ? (style = classes.MainImage)
+    : (style = classes.BGImage);
+
   const loadImage = () => {
     // use tertiary expression to render different class
     switch (props.source) {
       case "Wischen":
         return (
           <img
-            className={classes.Image}
+            className={style}
             src={Wischen}
             alt="A react app that lets people create a watchlist of movies"
           />
@@ -24,7 +29,7 @@ const image = props => {
       case "Real Estate Website":
         return (
           <img
-            className={classes.Image}
+            className={style}
             src={RealEstate}
             alt="A responsive redesign for a real estate website"
           />
@@ -32,7 +37,7 @@ const image = props => {
       case "Splatter":
         return (
           <img
-            className={classes.Image}
+            className={style}
             src={Splatter}
             alt="An fun app for creating simple splatter art"
           />
@@ -40,7 +45,7 @@ const image = props => {
       case "Resume Booster":
         return (
           <img
-            className={classes.Image}
+            className={style}
             src={MilennialGoT}
             alt="A fun app based on random data generators"
           />
@@ -48,7 +53,7 @@ const image = props => {
       case "Interior Design":
         return (
           <img
-            className={classes.Image}
+            className={style}
             src={InteriorDesign}
             alt="A portfolio website for an interior designer"
           />
@@ -56,7 +61,7 @@ const image = props => {
       case "Landing Page":
         return (
           <img
-            className={classes.Image}
+            className={style}
             src={Dribbble01}
             alt="A mobile responsive landing page"
           />
@@ -64,7 +69,7 @@ const image = props => {
       case "Guess the Color":
         return (
           <img
-            className={classes.Image}
+            className={style}
             src={ColorGame}
             alt="A react native game based on color"
           />

@@ -1,4 +1,4 @@
-.Image {
+.BGImage {
   position: absolute;
   top: 0;
   left: 0;
@@ -6,6 +6,10 @@
   object-fit: cover;
   z-index: 1;
   filter: grayscale(0%);
+}
+
+.MainImage {
+  width: 100%;
 }
 
 @media (min-width: 600px) {
