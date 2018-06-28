@@ -61,7 +61,7 @@ const about = () => {
           <h3>Currently Reading:</h3>
           <ul>
             <li>
-              <em>Othello</em> by William Shakespeare
+              <em>Cracking the Coding Interview</em> by Gayle Laakmann McDowell
             </li>
           </ul>
         </div>
