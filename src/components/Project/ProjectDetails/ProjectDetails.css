@@ -1,8 +1,19 @@
 .Project {
   display: flex;
   flex-direction: column;
+  animation: fade-in 1s;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 .Header {
   display: none;
 }
@@ -88,16 +99,26 @@
     transform: translate(-50%, -50%);
     width: 85%;
     height: 70%;
+    animation: fade-in 1s;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -45%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
   }
 
   .Left {
     width: 100%;
     padding-left: 0;
-    /* border: 1px solid white; */
   }
 
   .Right {
-    /* border: 1px solid white; */
     margin-top: 70px;
   }
 
