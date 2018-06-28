@@ -8,6 +8,7 @@ import Splatter from "../../assets/projectImages/splatter.jpg";
 import MilennialGoT from "../../assets/projectImages/MilennialGoT.jpg";
 import Dribbble01 from "../../assets/projectImages/dribbble01.jpg";
 import ColorGame from "../../assets/projectImages/colorgame.jpg";
+import TivixWeather from "../../assets/projectImages/tivixweather.jpg";
 
 // uses different styles depending on type prop
 const image = props => {
@@ -73,6 +74,14 @@ const image = props => {
             className={style}
             src={ColorGame}
             alt="A react native game based on color"
+          />
+        );
+      case "Weather Forecast":
+        return (
+          <img
+            className={style}
+            src={TivixWeather}
+            alt="A 5-day temperature forecast"
           />
         );
       default:

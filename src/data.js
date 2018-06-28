@@ -26,6 +26,19 @@ const projects = [
     tags: ["react", "redux", "react router", "css", "css modules"]
   },
   {
+    title: "Weather Forecast",
+    thumbnail: "test link",
+    demo: "http://aguevara23.github.io/tivix-weather-react/",
+    gh: "https://github.com/aguevara23/tivix-weather-react",
+    tech: ["React"],
+    coreTech: ["react", "css3"],
+    path: "/portfolio/weather",
+    images: ["tivixweather.png"],
+    description:
+      "An app that fetches data from the OpenWeatherMaps api and displays temperature forecasts across a five day period.",
+    tags: ["react", "css"]
+  },
+  {
     title: "Guess the Color",
     thumbnail: "test link",
     demo: null,
