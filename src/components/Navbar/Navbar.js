@@ -1,7 +1,6 @@
-import React from "react";
-import classes from "./Navbar.css";
-import { NavLink } from "react-router-dom";
-import resume from "../../assets/AlexGuevara_Resume_2018.pdf";
+import React from 'react';
+import classes from './Navbar.css';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
   <div className={classes.Navbar}>
@@ -15,9 +14,6 @@ const Navbar = () => (
       <NavLink activeClassName={classes.active} to="/about/">
         About
       </NavLink>
-      <a href={resume} target="_blank">
-        Resume
-      </a>
     </ul>
   </div>
 );
